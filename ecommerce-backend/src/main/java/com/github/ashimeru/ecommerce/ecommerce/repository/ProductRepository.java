@@ -7,8 +7,8 @@ import org.springframework.stereotype.Repository;
 import com.github.ashimeru.ecommerce.ecommerce.Entity.ProductEntity;
 
 @Repository
-public interface ProductRepository extends JpaRepository<ProductEntity, Long>{
+public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
   List<ProductEntity> findAllByCategory(String category);
   Optional<ProductEntity> findByName(String name);
-  List<ProductEntity> findByPrice(int priceFrom, int priceTo);
+  List<ProductEntity> findByPriceBetween(double priceFrom, double priceTo);
 }

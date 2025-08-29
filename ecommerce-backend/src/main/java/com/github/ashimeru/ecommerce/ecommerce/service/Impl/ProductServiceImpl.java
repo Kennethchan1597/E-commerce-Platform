@@ -66,8 +66,8 @@ public ProductEntity update(Long id, ProductDto productDto) {
     return this.dtoMapper.map(productEntity);
   }
 
-  public List<ProductDto> findByPrice(int priceFrom, int priceTo) {
-    List<ProductEntity> productEntitys = this.productRepository.findByPrice(priceFrom, priceTo);
+  public List<ProductDto> findByPrice(double priceFrom, double priceTo) {
+    List<ProductEntity> productEntitys = this.productRepository.findByPriceBetween(priceFrom, priceTo);
     return productEntitys.stream().map(c -> this.dtoMapper.map(c)).toList();
   }
 
