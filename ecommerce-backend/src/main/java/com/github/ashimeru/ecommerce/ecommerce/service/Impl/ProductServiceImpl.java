@@ -55,7 +55,7 @@ public ProductEntity update(Long id, ProductDto productDto) {
     ProductEntity productEntity = this.productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(Code.Product_NOT_FOUND));
     return this.dtoMapper.map(productEntity);
   }
-
+  
   public List<ProductDto> findAllByCategory(String category) {
     List<ProductEntity> productEntitys = this.productRepository.findAllByCategory(category);
     return productEntitys.stream().map(c -> this.dtoMapper.map(c)).toList();
