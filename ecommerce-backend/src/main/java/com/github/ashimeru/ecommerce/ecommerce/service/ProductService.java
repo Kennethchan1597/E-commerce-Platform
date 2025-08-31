@@ -17,7 +17,7 @@ public interface ProductService {
 
   ProductDto findByName(String name);
 
-  List<ProductDto> findByPrice(int priceFrom, int priceTo);
+  List<ProductDto> findByPrice(double priceFrom, double priceTo);
 
   List<ProductDto> findAll();
 }
