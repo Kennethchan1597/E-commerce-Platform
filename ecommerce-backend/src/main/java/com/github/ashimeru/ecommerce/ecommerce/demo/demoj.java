@@ -6,6 +6,10 @@ public class demoj {
     System.out.println("Hello, this is demo");
     System.out.println("Hello, this is demo");
     System.out.println("Hello, this is demo");
+    System.out.println("Hello, this is demo");
+    System.out.println("Hello, this is demo");
+    System.out.println("Hello, this is demo");
+    
   }
 
 }
