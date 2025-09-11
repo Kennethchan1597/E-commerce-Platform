@@ -50,14 +50,4 @@ public class ProductController implements ProductOperation{
     return productDtos.stream().map(c -> this.dtoMapper.map(c)).toList();
   }
 
-
-  // demo
-  // demo
-  // demo
-  // demo
-  // demo
-  // demo
-  // demo
-  
-
 }
