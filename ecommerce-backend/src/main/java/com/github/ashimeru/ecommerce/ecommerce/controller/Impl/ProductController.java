@@ -49,4 +49,15 @@ public class ProductController implements ProductOperation{
     List<ProductDto> productDtos = this.productService.findAll();
     return productDtos.stream().map(c -> this.dtoMapper.map(c)).toList();
   }
+
+
+  // demo
+  // demo
+  // demo
+  // demo
+  // demo
+  // demo
+  // demo
+  
+
 }
